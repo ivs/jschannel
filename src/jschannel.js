@@ -673,7 +673,9 @@
                         if (seen.indexOf(obj) >= 0) {
                             throw "params cannot be a recursive data structure"
                         }
-                        seen.push(obj);
+                        if(obj) {
+                            seen.push(obj);
+                        }
 
                         if (typeof obj === 'object') {
                             for (var k in obj) {
