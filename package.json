@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adtile/jschannel.git"
+    "url": "https://github.com/yochannah/jschannel.git"
   },
   "keywords": [
     "jschannel",
@@ -23,7 +23,7 @@
   "author": "Lloyd Hilaiel",
   "license": "LGPL",
   "bugs": {
-    "url": "https://github.com/alexkalderimis/jschannel/issues"
+    "url": "https://github.com/yochannah/jschannel/issues"
   },
-  "homepage": "https://github.com/alexkalderimis/jschannel"
+  "homepage": "https://github.com/yochannah/jschannel"
 }
