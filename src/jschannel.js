@@ -270,10 +270,6 @@
 
             if (!cfg.window || !cfg.window.postMessage) throw("Channel.build() called without a valid window argument");
 
-            /* we'd have to do a little more work to be able to run multiple channels that intercommunicate the same
-             * window...  Not sure if we care to support that */
-            if (window === cfg.window) throw("target window is same as present window -- not allowed");
-
             // let's require that the client specify an origin.  if we just assume '*' we'll be
             // propagating unsafe practices.  that would be lame.
             var validOrigin = false;
