@@ -287,7 +287,7 @@
                 }
             }
 
-            if (!validOrigin) throw ("Channel.build() called with an invalid origin");
+//             if (!validOrigin) throw ("Channel.build() called with an invalid origin");
 
             if (typeof cfg.scope !== 'undefined') {
                 if (typeof cfg.scope !== 'string') throw 'scope, when specified, must be a string';
