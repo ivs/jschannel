@@ -277,17 +277,17 @@
             // let's require that the client specify an origin.  if we just assume '*' we'll be
             // propagating unsafe practices.  that would be lame.
             var validOrigin = false;
-            if (typeof cfg.origin === 'string') {
-                var oMatch;
-                if (cfg.origin === "*") validOrigin = true;
-                // allow valid domains under http and https.  Also, trim paths off otherwise valid origins.
-                else if (null !== (oMatch = cfg.origin.match(/^(https?|chrome):\/\/(?:[-a-zA-Z0-9_\.])+(?::\d+)?/))) {
-                    cfg.origin = oMatch[0].toLowerCase();
-                    validOrigin = true;
-                }
-            }
+//             if (typeof cfg.origin === 'string') {
+//                 var oMatch;
+//                 if (cfg.origin === "*") validOrigin = true;
+//                 // allow valid domains under http and https.  Also, trim paths off otherwise valid origins.
+//                 else if (null !== (oMatch = cfg.origin.match(/^(https?|chrome):\/\/(?:[-a-zA-Z0-9_\.])+(?::\d+)?/))) {
+//                     cfg.origin = oMatch[0].toLowerCase();
+//                     validOrigin = true;
+//                 }
+//             }
 
-             if (!validOrigin) throw ("Channel.build() called with an invalid origin");
+//              if (!validOrigin) throw ("Channel.build() called with an invalid origin");
 
             if (typeof cfg.scope !== 'undefined') {
                 if (typeof cfg.scope !== 'string') throw 'scope, when specified, must be a string';
